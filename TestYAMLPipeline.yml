@@ -14,3 +14,10 @@ trigger:
     - docs/README.me
 # no PR triggers
 pr: none 
+
+stages:
+- stage: Build
+  jobs:
+  - job: BuildJob
+    steps:
+    - script: echo Building!
